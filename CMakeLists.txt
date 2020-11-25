@@ -29,5 +29,5 @@ find_package(CURL REQUIRED)
 
 
 add_executable(employee_getter main.cpp)
-target_link_libraries(employee_getter ${CURL_LIBRARIES})
+target_link_libraries(employee_getter PRIVATE ${CURL_LIBRARIES})
 
