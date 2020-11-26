@@ -27,7 +27,7 @@ add_compile_options(
 
 find_package(CURL REQUIRED)
 
-
 add_executable(employee_getter main.cpp)
 target_link_libraries(employee_getter PRIVATE ${CURL_LIBRARIES})
 
+install(TARGETS employee_getter RUNTIME DESTINATION bin)
